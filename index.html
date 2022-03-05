@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Dispensa de Disciplinas</title>
+  <link rel="stylesheet" href="./styles/form.css">
+</head>
+
+<body>
+  <form action="">
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name">
+    <label for="cpf">CPF</label>
+    <input type="text" name="cpf" id="cpf">
+    <label for="origin">IES de Origem</label>
+    <input type="text" name="origin" id="origin">
+    <label for="course">Curso</label>
+    <input type="text" name="course" id="course">
+    <div class="multiselect">
+      <div id="select-box">
+        <select name="subjects">
+          <option>Select an option</option>
+        </select>
+        <div class="over-select"></div>
+      </div>
+      <div id="checkboxes">
+        <div class="search">
+          <label for="seach-subject">
+            <img src="./imgs/icon-search.svg" alt="icon-search">
+          </label>
+          <input type="search" id="seach-subject" placeholder="Search...">
+        </div>
+        <label for="one" class="option">
+          <input type="checkbox" id="one" />First checkbox</label>
+        <label for="two" class="option">
+          <input type="checkbox" id="two" />Second checkbox</label>
+        <label for="three" class="option">
+          <input type="checkbox" id="three" />Third checkbox</label>
+      </div>
+    </div>
+    <label for="attachment">Anexe o aproveitamento de estudos</label>
+    <input type="file" name="attachment" id="attachment">
+  </form>
+  <script src="./scripts/form.js"></script>
+</body>
+
+</html>
